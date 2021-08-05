@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <style>
+     th{
+      background-color: teal;
+      color: white;
+      border-radius: 4px;
+      text-decoration: underline;
+    
+      
+    }
+    input[type=submit] 
+    {
+      color: white;
+     
+    }
+    input[type=value] {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+   
+    .container h1{
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-decoration: underline;
+      
+    }
+ 
+    .success, .error {
+      color: white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+      
+    }
+
+    .success {
+      background: teal;
+    }
+
+    .error {
+      background: red;
+    }
+  </style>
+  <title>Book List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Add Book</h1>
+    <form id="book-form">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" class="u-full-width">
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" id="author" class="u-full-width">
+      </div>
+      <div>
+        <label for="isbn">ISBN#</label>
+        <input type="text" id="isbn" class="u-full-width">
+      </div>
+      <div>
+        <input style= "background-color: blue" type="submit" value="Submit" class="u-full-width">
+      </div>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+
+  <script src="appes6.js"></script>
+</body>
+</html>
